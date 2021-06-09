@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server is running</title>
+</head>
+<body>
+    {% if messages %}
+        <span>Messages: {{ messages }}</span>
+        <script>
+            setTimeout(function(){
+               window.location.reload(1);
+            }, 5000);
+        </script>
+    {% else %}
+        {{ result }}
+    {% endif %}
+
+</body>
+</html>
